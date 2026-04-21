@@ -1,0 +1,66 @@
+# Build outputs
+/build/
+/build-*/
+/out/
+/cmake-build-*/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+Testing/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+
+# Solver generated files
+*.tour
+*.trace
+*.sol
+*.res
+*.stats
+*.tmp
+
+# Existing LKH build artifacts
+/LKH-3.0.13/SRC/OBJ/
+
+# Local raw data
+/data/raw/*
+!/data/raw/.gitkeep
+/data/instances/*
+!/data/instances/.gitkeep
+/data/manifests/catalogs/*.tsv
+/data/manifests/synthetic/*/*.json
+/data/manifests/synthetic/slices/
+/data/tsplib/*
+!/data/tsplib/.gitkeep
+
+# Cache and results are reproducible artifacts
+/cache/*
+!/cache/.gitkeep
+/results/*
+!/results/.gitkeep
+
+# Generated synthetic manifests and temporary purge directories
+/data/manifests/synthetic/**/*
+!/data/manifests/synthetic/.gitkeep
+/data_purge_*/
+/cache_purge_*/
+/results_purge_*/
+/solver_results/
